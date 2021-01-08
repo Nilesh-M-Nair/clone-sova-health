@@ -1,0 +1,38 @@
+.header{
+    height: 68px;
+    top: 0;
+    width:100%;
+    z-index: 100;
+    position:sticky;
+    background-color: #29385b;
+}
+
+.header__container{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.header__nav{
+    display: flex;
+    flex-direction: row;
+}
+.header__logo{
+    width: 165px;
+    height: 60px;
+    margin: 0px;
+    padding-top: 4px;
+}
+
+.header__routes{
+    text-transform: uppercase;
+    margin: 20px 20px 0px 20px;
+    color: white;
+    text-decoration: none;
+    font-size:12px;
+    line-height: 33px;
+    
+}
+

@@ -1,0 +1,19 @@
+.healthgoal{
+    display: flex;
+    flex-direction:row;
+    width: 260px;
+    height: 245px;
+    margin: 20px 20px;
+}
+
+.healthgoal__header{
+    background-color: aqua;
+    font-weight: 800;
+    font-size: 18px;
+
+}
+
+.healthgoal__content{
+    background-color:blueviolet;
+    font-size: 10px;
+}
