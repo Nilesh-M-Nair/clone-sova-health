@@ -1,19 +1,76 @@
 .healthgoal{
     display: flex;
     flex-direction:row;
-    width: 260px;
-    height: 245px;
-    margin: 20px 20px;
+    justify-content:first baseline;
+    align-items:stretch;
+    text-align: center;
+    width: 230px;
+    height: 215px;
+    padding: 30px 50px;
+    border-radius: 40px ;
 }
 
-.healthgoal__header{
-    background-color: aqua;
-    font-weight: 800;
-    font-size: 18px;
-
+.healthgoal__heading{
+    text-transform: uppercase;
 }
 
-.healthgoal__content{
-    background-color:blueviolet;
-    font-size: 10px;
+.healthgoal__card{
+    box-shadow: 2px 2px 10px black;
+}
+
+.icon{
+    width:40px;
+    height:40px;
+    padding: 10px 0;
+    color:  #29385bc0;
+}
+
+
+/* ------------------------------------------------------------ */
+
+.card__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    padding: 50px 0;
+}
+
+.card__heading{
+    text-transform: uppercase;
+    color: #29385b;
+    font-weight: 600;
+    font-size: 32px;
+    border-bottom: 3px solid #29385b;
+    text-align: center;
+    width: 53%;
+}
+
+.card__healthcrad{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    padding: 0 10%;
+    margin: 50px 0 ;
+}
+
+@media only screen and (max-width:650px){
+    .card__heading{
+        font-size: x-large;
+    }
+    
+    .card__healthcrad{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap:wrap;
+        padding: 0;
+        margin: 0 ;
+    }
+    
 }

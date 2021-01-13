@@ -12,9 +12,11 @@ function HealthGoalCard() {
     )
     return (
     // <div style={healthgoalcard}>
-       <div >
-       {cardList} 
-       {console.log(cardList)}
+      <div className="card__container">
+        <span className = 'card__heading'>WE HELP YOU ACHIEVE YOUR HEALTH GOALS</span>
+        <span className = "card__healthcrad">
+          {cardList}
+        </span>
     </div>
   )
 }

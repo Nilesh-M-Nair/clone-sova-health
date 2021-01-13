@@ -1,0 +1,35 @@
+
+/*--------------- SocialMedia--------------- */
+
+.socialmedia{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialmedia__container{
+    padding: 10px 5px;
+}
+
+.socialmedia__image{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+/* .socialmedia__image{
+    width:100%;
+    height: 100%;
+} */
+
+.socialmedia__image{
+    width:40px;
+    height:40px;
+}
+
+/* --------------------------------------------- */
+
+/* ---------------Contact Details ---------------*/
+

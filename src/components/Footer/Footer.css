@@ -1,0 +1,218 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+ 
+.footer__container{
+    width:70%;
+    border-top: 5px solid #E3E3E3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__newsletter{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content:left;
+    align-items:flex-start;
+    padding: 25px 0;
+    padding-left: 20px;
+}
+
+.footer__newsletter-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__newsletter-text{
+    font-size: 16px;
+    padding-bottom: 60px;
+    font-weight: 500;
+}
+
+.footer__newsletter-input{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+.newsletter-inputField{
+    width :360px;
+    height: 45px;
+    text-decoration: none;
+    margin-bottom: 20px ;
+    border: 2px solid black;
+}
+
+.newsletter-inputButton{
+    width:80px;
+    font-size: 14px;
+    border-radius: 20px;
+    padding: 4px 4px;
+    color: white;
+    text-align: center;
+    background-color: #29385b;
+}
+
+.newsletter-inputButton:hover{
+    background-color: #81decd;
+}
+
+.footer__contact{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content:right;
+    align-items:flex-end;
+    padding: 10% 0;
+    padding-right: 20px;
+}
+
+.footer_contact_details1{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 50%;
+    padding-bottom: 40px;
+}
+.footer_contact_details2{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 50%;
+    padding-bottom: 40px;
+}
+
+.footer__icon1{
+    width: 20px;
+    height: 20px;
+    padding-right: 20px;
+}
+.footer__icon2{
+    width: 20px;
+    height: 15px;
+    padding-right: 20px;
+}
+
+#footer_mail{
+    padding-bottom: 150px;
+}
+
+.footer_number{
+    color: #29385b;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    text-align:right;
+}
+
+.footer__mail_id{
+    text-decoration: none;
+    color: black;
+}
+
+.footer__bottom_text{
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    color: rgba(0, 0, 0, 0.76);
+}
+
+@media only screen and ( max-width:650px ){
+    .footer{
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+    
+    .footer__container{
+        display: flex;
+        padding: 20px 0;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .footer__newsletter{
+        width:100%;
+        display: flex;
+        padding: 30px 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer__newsletter-text{
+        width: 100%;
+        font-size: 16px !important;
+        font-weight: 400 !important;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align:center;
+        padding: 20px 0px;
+    }
+
+    .newsletter-inputField{
+        width : 250px;
+        height: 40px;
+        text-decoration: none;
+        margin-bottom: 20px ;
+        border: 2px solid black;
+    }
+
+    .footer__newsletter-input{
+        justify-content: center;
+        align-items: center;
+        padding: 30px 0px;
+        margin: 0 !important;
+    }
+
+    .footer__contact{
+        width:100%;
+        justify-content:center;
+        align-items:center;
+        padding-right: 0px;
+    }
+    
+    .footer_contact_details1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 50px;
+        width: 80%;
+        padding-bottom: 40px;
+    }
+    .footer_contact_details2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 30px;
+        width: 80%;
+        padding-bottom: 40px;
+    }
+
+    .footer_number{
+
+        text-align: end;
+        color: #29385b;
+        font-weight: 500;
+    }
+
+    #footer_mail{
+        padding-bottom: 50px;
+    }
+
+    .footer__bottom_text{
+        font-size: 10px;
+        font-weight: 300;
+        text-align: center;
+        letter-spacing: 0.5px;
+        color: rgba(0, 0, 0, 0.76);
+    }
+}

@@ -5,43 +5,43 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import Home from "../pages/Home";
-import HowItWorks from "../pages/HowItWorks"; 
+import Navbar from "../components/Navbar/Navbar";
+import Home from "../pages/Home/Home";
+import HowItWorks from "../pages/HowItWorks/HowItWorks"; 
 
 export default function Routers() {
   return (
     <Router>
-      <div>
+      <Navbar/>
+      <span>
         <Switch>
-          <Route exact path="/">
-            <Home/>
-          </Route>
-          <Route path="/howitworks">
-            <HowItWorks/>
-          </Route>
-          <Route path="/pricing">
-            <Development />
-          </Route>
-          <Route path="/science">
-            <Development />
-          </Route>
-          <Route path="/faqs">
-            <Development />
-          </Route>
-          <Route path="/aboutus">
-            <Development />
-          </Route>
+          <Route exact path="/" component ={Home}/>
+          <Route exact path="/howitworks" component ={HowItWorks}/>
+          <Route exact path="/pricing"component={UnderDevelopment} />
+          <Route exact path="/science"component={UnderDevelopment} />
+          <Route exact path="/faqs" component={UnderDevelopment} />
+          <Route exact path="/aboutus" component={UnderDevelopment} />
+          <Route path="/" component={Errorpage}/>
         </Switch>
-      </div>
+      </span>
     </Router>
   );
 }
 
-function Development() {
+function UnderDevelopment() {
   return(
     <div>
       <Link to="/">Go back to home page</Link>
       <p>Under Development</p>
+    </div>
+    
+  )
+}
+function Errorpage() {
+  return(
+    <div>
+      <Link to="/">Go back to home page</Link>
+      <p>Something went worng!</p>
     </div>
     
   )
